@@ -52,7 +52,6 @@
     <profiles>
         <profile>
             <!--注意,此id必须与setting.xml中指定的一致,不要自作聪明改它名字-->
-            <id>release</id>
             <id>snapshot</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
@@ -66,7 +65,7 @@
                         <version>1.6.7</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>oss</serverId>
+                            <serverId>snapshot</serverId>
                             <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
@@ -123,11 +122,11 @@
             <distributionManagement>
                 <snapshotRepository>
                     <!--注意,此id必须与setting.xml中指定的一致-->
-                    <id>oss</id>
+                    <id>snapshot</id>
                     <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
                 </snapshotRepository>
                 <repository>
-                    <id>oss</id>
+                    <id>snapshot</id>
                     <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
             </distributionManagement>
@@ -147,7 +146,7 @@
                         <version>1.6.7</version>
                         <extensions>true</extensions>
                         <configuration>
-                            <serverId>oss</serverId>
+                            <serverId>release</serverId>
                             <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
                             <autoReleaseAfterClose>true</autoReleaseAfterClose>
                         </configuration>
@@ -215,11 +214,11 @@
             <distributionManagement>
                 <snapshotRepository>
                     <!--注意,此id必须与setting.xml中指定的一致-->
-                    <id>oss</id>
+                    <id>release</id>
                     <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
                 </snapshotRepository>
                 <repository>
-                    <id>oss</id>
+                    <id>release</id>
                     <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
             </distributionManagement>
