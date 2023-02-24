@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.kouleen.breadlib</groupId>
         <artifactId>breadlib</artifactId>
-        <version>1.0-0</version>
+        <version>1.0.0</version>
     </parent>
 
     <artifactId>breadlib-core</artifactId>
@@ -20,7 +20,7 @@
         <dependency>
             <groupId>io.kouleen.breadlib</groupId>
             <artifactId>breadib-annotation-processor</artifactId>
-            <version>1.0-0</version>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
     <build>
