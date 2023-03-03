@@ -14,7 +14,7 @@
     <url>https://github.com/kouleen/breadlib</url>
 
     <!--需要特别注意,你上传的是SNAPSHOT仓库,所以此处版本号后缀必须带SNAPSHOT-->
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <packaging>pom</packaging>
     <modules>
