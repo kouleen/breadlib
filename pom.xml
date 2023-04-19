@@ -21,6 +21,7 @@
         <module>breadlib-annotation-processor</module>
         <module>breadlib-core</module>
         <module>breadlib-minecraft-plugin-parent</module>
+        <module>breadlib-minecraft-plugin-core</module>
     </modules>
 
     <!--开源协议...-->
