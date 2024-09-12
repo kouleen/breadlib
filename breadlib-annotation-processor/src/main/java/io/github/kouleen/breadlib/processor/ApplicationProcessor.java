@@ -1,5 +1,6 @@
 package io.github.kouleen.breadlib.processor;
 
+import com.google.auto.service.AutoService;
 import io.github.kouleen.breadlib.annotation.Main;
 
 import javax.annotation.processing.*;
@@ -20,6 +21,7 @@ import java.util.Set;
  */
 @SupportedAnnotationTypes("io.github.kouleen.breadlib.annotation.MySetterGetter")
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
+@AutoService(Processor.class)
 public class ApplicationProcessor extends AbstractProcessor {
 
     private boolean isProcess = false;
