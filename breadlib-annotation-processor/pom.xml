@@ -6,7 +6,7 @@
     <parent>
         <groupId>io.github.kouleen.breadlib</groupId>
         <artifactId>breadlib</artifactId>
-        <version>1.0.3-SNAPSHOT</version>
+        <version>1.0.3</version>
     </parent>
 
     <artifactId>breadlib-annotation-processor</artifactId>
@@ -22,6 +22,7 @@
             <groupId>com.google.auto.service</groupId>
             <artifactId>auto-service</artifactId>
             <version>(1.0,]</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 
