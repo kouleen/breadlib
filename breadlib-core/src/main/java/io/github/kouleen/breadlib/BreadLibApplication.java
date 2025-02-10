@@ -232,4 +232,13 @@ public class BreadLibApplication {
             }
         }
     }
+
+    public static <T> T getBean(Class<T> clazz) {
+        String clazzName = clazz.getName();
+        Object singleton = singletonFactory.getSingleton(clazzName);
+        if(ObjectUtils.isEmpty(singleton)){
+            throw new ClassLoaderException("singleton is null");
+        }
+        return (T)singleton;
+    }
 }
